@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- !Posiible font options -->
+<!--teko 
+ honk
+ caveat
+ major mono display
+ Expletus Sans
+ Tangerine
+ Allura
+ Exo
+ Calligraffitti
+ roboto
+
+
+ Ankh Sanctuary
+ The heart of everything
+
+ Mochary -->
+
+<!--!Changelog-->
+
+
+<!--! bugs List -->
+<!--! the sidebar isnt working from 768 to 900 px  -->
+
+<!--FIXME: LIST-->
+
+<!--FIXME: update the light mode in home page-MAKE IT BETTER-->
+<!--FIXME: update the FAQ page-->
+<!--FIXME: Add more AIs and tools(not enough)-->
+<!--FIXME: need to make description for AI short(3 lines). Some boxes are uneven-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIWeb</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+</head>
+
+<body>
+
+
+
+  <section class="navbar">
+    <div class="top">
+      <div class="logo">
+        <a href="#home" class="nav-buttons active"><span>Nexus</span></a>
+      </div>
+
+      <ul class="side-nav">
+        <li><a href="#" class="nav-buttons active" id="closeSidebar">&times;</a></li>
+        <li><a href="Login-Register/profile.html" class="nav-buttons active"><i class="fa-regular fa-user"></i>
+            Profile</a></li>
+        <li><a class="nav-buttons active" href="#contact"><i class="fa-regular fa-messages"></i> Contact</a></li>
+        <li><a class="nav-buttons active" href="#about"><i class="fa-regular fa-user"></i> About</a></li>
+        <li><a class="nav-buttons active" href="#home"><i class="fa-regular fa-house"></i> Home</a></li>
+      </ul>
+
+      <ul class="nav">
+        <li><a href="#" id="showSidebar" class="nav-buttons mobile active">&#9776;</a></li>
+        <li class="mode" onclick="ModeSelector()"><i class="fas fa-spin"></i></li>
+        <li><a id="hideOnMobile" href="Login-Register/profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+        <li><a class="nav-buttons active" id="hideOnMobile" href="#contact"><i class="fa-regular fa-messages"></i>
+            Contact</a></li>
+        <li><a class="nav-buttons active" id="hideOnMobile" href="#about"><i class="fa-thin fa-circle-info"></i>
+            About</a></li>
+        <li><a class="nav-buttons active" id="hideOnMobile" href="#home"><i class="fa-regular fa-house"></i> Home</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- !main content start -->
+  <div class="main-content">
+    <section class="section home active" id="home">
+
+
+      <!-- !searchbar start -->
+
+
+
+
+      <div class="double-check">
+        <div id="typewriter" class="heading typing"></div>
+      </div>
+
+      <div class="searchbar">
+        <input id="searchbar" type="text" name="search" placeholder="Start Searching..">
+        <button class="search searchbar" id="search" onclick="search_list()"> <i class="fas fa-search"></i></button>
+
+        <!-- !list of items start -->
+
+        <div id='list'>
+          <div class="content">
+            <p class="list-heading">ChatGPT</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">AI chatbot that generate human-like responses to questions and prompts</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://openai.com/chatgpt/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Axiom</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">A company that captures data for analytics, security, operations, and new
+              insights</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://axiom.co/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading" id="special">Wolfram|Alpha</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">provides answers to factual queries by using algorithms and curated data.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.wolframalpha.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">TinyWow</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">TinyWow offers a collection of AI tools that can help solve users' issues when
+              it comes to PDFs, images, writing, videos, and documents.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://tinywow.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Jotform</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Jotform is a web-based tool that allows users to create custom online forms
+              without coding</p>
+            <div class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+            </div>
+            <a href="https://www.jotform.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Ossa.ai</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">OSSA.AI is the first platform of its kind dedicated to transforming written
+              scripts into short-form videos with a focus on engagement.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://ossa.ai/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Coursera</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Coursera is an online learning platform that offers courses, certificates,
+              degrees, and more from universities and companies</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.coursera.org/en-IN"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Syllaby</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Syllaby is an AI-powered tool designed to help businesses and professionals
+              generate video scripts for social media marketing.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a
+              href="https://syllaby.io/?via=victor33&gad_source=1&gclid=CjwKCAjw1emzBhB8EiwAHwZZxTu2M8RLRmf9kncoDbijMeIQqhdv9b8tRWAf4-sw3ISa0-1I-b8PgxoCeDMQAvD_BwE"><button
+                class="list-button">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading" id="special">Watermarker Remover</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.watermarkremover.io/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">opus.pro</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Opus Pro is a visual development tool for fast-track development of HTML5, Flash
+              and Windows applications and resources.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.opus.pro/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Krea.ai</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">KREA is an advanced AI-powered platform designed to revolutionize the creation
+              and enhancement of visual content.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.krea.ai/home"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Bing Art</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Bing's AI Art Generator uses machine learning algorithms to create images from
+              text descriptions</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.bing.com/images/create"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Gamma</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">The Gamma app is an AI-powered tool that helps users create presentations,
+              documents, and websites quickly and easily</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://gamma.app/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading" id="special">Superhuman</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Superhuman AI Automation is a framework for rapidly and safely automating the
+              majority of the work in complex tasks, with human level or above performance.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://superhuman.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">remove.bg</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.remove.bg/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Otter.ai</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Otter.ai is a speech-to-text software that uses AI to transcribe spoken words
+              into written text in real time</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://otter.ai/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading" id="special">elevenlabs.io</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">ElevenLabs is a company that uses AI to create voice and audio content</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://elevenlabs.io/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Lumen5</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Lumen5 is a video creation platform that uses AI to help users create videos
+              from written content:
+            </p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://lumen5.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Rytr</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Rytr is an AI writing tool that can generate original content for a variety of
+              purposes</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://rytr.me/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Kaiber.ai</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Kaiber is an AI-powered platform that helps users create videos, images, and
+              animations using text, images, and audio</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://kaiber.ai/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Consensus</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Consensus is an academic search engine, powered by AI, but grounded in
+              scientific research</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://consensus.app/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading" id="special">Video Translator</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="#"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading" id="special">Google Gemini</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Gemini for Google Cloud offers generative AI-powered assistance to a wide range
+              of Google Cloud users, including developers and data scientists.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://gemini.google.com/app?hl=en"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Midjourney</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Midjourney is an AI-powered image generator that creates realistic images from
+              text prompts</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.midjourney.com/home"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Replika</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">The Replika app is an artificial intelligence-based chatbot that mimics human
+              conversations</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://replika.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">10Web</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">10Web is a WordPress platform that uses AI to help users build and manage
+              websites</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://10web.io/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">MightyGPT</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Allows users to access a powerful chatGPT directly on WhatsApp.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.mightygpt.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Krisp</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Krisp is a desktop application that uses AI to help people communicate more
+              effectively during online meetings by reducing background noise and echo</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://krisp.ai/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Rewind</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Rewind is an AI-powered app that helps you find things you've seen, heard, or
+              said</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.rewind.ai/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Craiyon</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Craiyon is an AI art generator that creates unique images from text prompts.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.craiyon.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">supermeme.ai</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Supermeme.ai is an AI-powered meme generator that lets users create memes by
+              typing in text</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.supermeme.ai/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Brandmark</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Brandmark is used for creating unique, AI-powered logos and brand identities.
+            </p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://brandmark.io/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Glasp</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Glasp is a tool for highlighting and collecting notes from any webpage.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://glasp.co/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Soundful</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Soundful is an AI music generator that lets users create royalty-free tracks for
+              a variety of projects</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://soundful.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Beautiful.ai</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Beautiful.ai is a true cloud-based online presentation tool that helps you and
+              your team create presentations, collaborate, and present from anywhere</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.beautiful.ai/presentation-software"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">ai.image enlarger</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">a tool that uses artificial intelligence to expand the size of an image without
+              losing quality.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://imglarger.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Semantris</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Semantris is an engaging pair of word association games offered as a Google
+              experiment</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://research.google.com/semantris/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">pfpmaker</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">PFPMaker is a free AI-powered tool that helps users create personalized profile
+              pictures for social media</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://pfpmaker.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">thing translator</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Thing Translator is a web app that lets you point your phone (or laptop) at
+              stuff to hear to say it in a different language.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://experiments.withgoogle.com/thing-translator"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">geogebra</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">free, open-source software that helps students, teachers, and mathematicians
+              learn and teach math and science</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.geogebra.org/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">meta.ai</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">develops artificial intelligence and augmented and artificial reality
+              technologies.</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.meta.ai/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">giphy</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Giphy is a website and app that allows users to search for, share, and create
+              animated GIFs, stickers, and short video clips</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://giphy.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">tenor</p>
+            <p class="list-text">Free</p>
+            <p class="list-description">Tenor is an online GIF search engine and database owned by Google that allows
+              users to search for and share GIFs and videos</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://tenor.com/"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">Adobe Firefly</p>
+            <p class="list-text">Freemium</p>
+            <p class="list-description">Adobe Firefly is a web application and a family of generative AI models that use
+              AI to help people create content</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <a href="https://www.adobe.com/in/products/firefly/features/text-to-image.html"><button
+                class="list-button">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+
+          <div class="content">
+            <p class="list-heading">IN DEVELOPMENT</p>
+            <p class="list-text">Premium</p>
+            <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+            <p class="list-tags">
+            <div class="categories">#chatbot</div>
+            <div class="categories">#useful</div>
+            <div class="categories">#fun</div>
+            </p>
+            <!-- !list of items end -->
+            <a href="#"><button class="list-button">Visit<i
+                  class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+          </div>
+        </div>
+        <button class="btn" id="seeMore">See More</button>
+      </div>
+    </section>
+
+
+
+
+    <!-- !searchbar end -->
+
+
+
+
+    <section class="section about" id="about">
+      <p class="main-text">FAQ Section</p>
+      <hr>
+      <div class="question-answer">
+        <p class="main-question">What is AIWeb?</p>
+        <p class="main-answer">
+          AI web is a free to use website which hepls you 
+          find the correct tool for your job
+        </p>
+      </div>
+
+      <hr>
+      <div class="question-answer">
+        <p class="main-question">What is Freemium</p>
+        <p class="main-answer">
+          Freemium is a keyword used to AIweb to describe certain websites 
+          which is free for only for a few tries after which you will need to pay to continue
+        </p> 
+      </div>
+
+      <hr>
+      <div class="question-answer">
+        <p class="main-question">What is </p>
+        <p class="main-answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam? consectetur adipisicing elit.
+          Eveniet, quasi quam neque ad illum dignissimos. ahsdjdahjdjashdjhsbdhsbdjshbd
+        </p>
+      </div>
+
+      <hr>
+      <div class="question-answer">
+        <p class="main-question">What is AIWeb?</p>
+        <p class="main-answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam? consectetur adipisicing elit.
+          Eveniet, quasi quam neque ad illum dignissimos. ahsdjdahjdjashdjhsbdhsbdjshbd
+        </p>
+      </div>
+
+      <hr>
+      <div class="question-answer">
+        <p class="main-question">What is AIWeb?</p>
+        <p class="main-answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam? consectetur adipisicing elit.
+          Eveniet, quasi quam neque ad illum dignissimos. ahsdjdahjdjashdjhsbdhsbdjshbd
+        </p>
+      </div>
+
+      <hr>
+      <div class="question-answer">
+        <p class="main-question">What is AIWeb?</p>
+        <p class="main-answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam? consectetur adipisicing elit.
+          Eveniet, quasi quam neque ad illum dignissimos. ahsdjdahjdjashdjhsbdhsbdjshbd
+        </p>
+      </div>
+
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="main-text">
+        <h1>Contact Us</h1>
+      </div>
+      <form action="https://formsubmit.co/d789003f8ae2b89c67b2550ca65336f5 " method="post" id="Form">
+        <div class="row">
+          <div class="contact-form padd-15">
+            <div class="row">
+              <div class="form-item col-6 padd-15">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name :" name="name" required="required">
+                </div>
+              </div>
+              <div class="form-item col-6 padd-15">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="E-mail :" name="email" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="subject:" name="subject" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <div class="form-group">
+                  <textarea name="message" class="form-control" id="" placeholder="Message :"
+                    required="required"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <button type="submit" value="submit" class="btn">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="_next"
+          value="https://the-inception-bros.github.io/AIWeb.github.io/Submitted/submitted.html">
+        <input type="hidden" name="_subject" value="New submission From AIWeb">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Form Submitted">
+      </form>
+    </section>
+
+  </div>
+  <!-- !main content end -->
+  </div>
+
+  <footer>
+    <hr class="hr">
+    <div class="footer-info">
+      <a href="https://github.com/the-inception-bros/"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@alanbetty"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://x.com/AlanPBetty"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <hr id="no2">
+    <div class="copyright">
+      <p>&copy; 2024 AIWeb. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="index.js"></script>
+
+
+</html>
