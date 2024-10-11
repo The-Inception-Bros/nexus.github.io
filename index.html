@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--!Changelog-->
+
+
+<!--! bugs List -->
+<!--! the sidebar isnt working from 768 to 900 px  -->
+
+<!-- todo list:
+fix about us , contasct us p;age -->
+<!-- fix categories -->
+<!-- fiox responsiveness -->
+<!-- make the description even  -->
+
+
+<!--FIXME: LIST-->
+<!--FIXME: hidden categories-->
+<!-- FIXME: Add more AIs and tools(not enough) -->
+<!-- do the css for the new search thing -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIWeb</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=light_mode" />
+</head>
+
+<body>
+
+
+
+  <section class="navbar">
+    <div class="top">
+      <div class="logo">
+        <a href="#home" class="nav-buttons active"><span>Nexus</span></a>
+      </div>
+
+      <ul class="side-nav">
+        <li><a href="#" class="nav-buttons" id="closeSidebar">&times;</a></li>
+        <div class="nav-control">
+        <li><a class="nav-buttons active" href="#home"><i class="fa-regular fa-house"></i> Home</a></li>
+        <li><a class="nav-buttons active" href="#about"><i class="fa-regular fa-user"></i> About</a></li>
+        <li><a class="nav-buttons active" href="#contact"><i class="fa-regular fa-messages"></i> Contact</a></li>
+        <li><a href="Login-Register/profile.html" class="nav-buttons active"><i class="fa-regular fa-user"></i>Profile</a></li>
+            </div>
+      </ul>
+
+      <ul class="nav">
+        <li><a href="#" id="showSidebar" class="nav-buttons mobile active">&#9776;</a></li>
+        <li class="mode"><i class="fas fa"></i></li>
+        <li><a id="hideOnMobile" href="Login-Register/profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+        <li><a class="nav-buttons active" id="hideOnMobile" href="#contact"><i class="fa-regular fa-messages"></i>
+            Contact</a></li>
+        <li><a class="nav-buttons active" id="hideOnMobile" href="#about"><i class="fa-thin fa-circle-info"></i>
+            About</a></li>
+        <li><a class="nav-buttons active" id="hideOnMobile" href="#home"><i class="fa-regular fa-house"></i> Home</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- !main content start -->
+  <div class="main-content">
+    <section class="section home active" id="home">
+
+
+
+      <!-- !searchbar start -->
+
+
+
+
+      <div class="double-check">
+        <div id="typewriter" class="heading typing"></div>
+      </div>
+
+
+      <div class="wrapper">
+        <div class="searchbar">
+          <input id="searchbar" type="text" name="search" placeholder="Start Searching..">
+          <button class="search searchbar" id="search"> <i class="fas fa-search"></i></button>
+          <div class="button-control category-heading" id="filter"><i class="fa-thin fa-filter-list"></i></div>
+        </div>
+
+        <div id="buttons">
+          <button class="button-value category" onclick="filterProduct('all')">All</button>
+          <button class="button-value category" onclick="filterProduct('Chatbots')">Chatbots</button>
+          <button class="button-value category" onclick="filterProduct('ContentGeneration')">ContentGeneration</button>
+          <button class="button-value category" onclick="filterProduct('DataAnalysis')">DataAnalysis</button>
+          <button class="button-value category" onclick="filterProduct('CreativeAI')">CreativeAI</button>
+          <button class="button-value category" onclick="filterProduct('ImageEditing')">ImageEditing</button>
+          <button class="button-value category" onclick="filterProduct('VideoTools')">VideoTools</button>
+          <button class="button-value category" onclick="filterProduct('AudioTools')">AudioTools</button>
+          <button class="button-value category" onclick="filterProduct('Productivity')">Productivity</button>
+          <button class="button-value category" onclick="filterProduct('EdTech')">EdTech</button>
+          <button class="button-value category" onclick="filterProduct('MarketingAI')">MarketingAI</button>
+          <button class="button-value category" onclick="filterProduct('Communication')">Communication</button>
+          <button class="button-value category" onclick="filterProduct('GIFsAndMedia')">GIFsAndMedia</button>
+          <button class="button-value category" onclick="filterProduct('UtilityTools')">UtilityTools</button>
+          <button class="button-value category" onclick="filterProduct('PresentationAI')">PresentationAI</button>
+          <button class="button-value category" onclick="filterProduct('TranslationTools')">TranslationTools</button>
+          <button class="button-value category" onclick="filterProduct('LanguageGames')">LanguageGames</button>
+        </div>
+
+        <div id="content"></div>
+      </div>
+    </section>
+
+
+    <section class="section about" id="about">
+      <p class="main-text">FAQ Section</p>
+      <hr>
+      <div class="question-answer">
+        <p class="main-question">What is Nexus?</p>
+        <p class="main-answer">
+          Nexus is a free to use website which helps you
+          find the correct tool for your job
+        </p>
+      </div>
+
+
+      <div class="question-answer">
+        <p class="main-question">What is Freemium?</p>
+        <p class="main-answer">
+          Freemium is a keyword used in Nexus to describe certain websites
+          which is free for only for a few tries after which you will need to pay to continue
+        </p>
+      </div>
+
+
+      <div class="question-answer">
+        <p class="main-question">Are the AI tools listed here free to use?</p>
+        <p class="main-answer">
+          As given in the description of the tools, some of the tools present in Nexus are free, freemium, or
+          premium.<br> Feel free to check out!
+        </p>
+      </div>
+
+
+      <div class="question-answer">
+        <p class="main-question">Do you provide reviews or ratings for the tools?</p>
+        <p class="main-answer">
+          No, but perhaps in the future (¬‿¬)
+        </p>
+      </div>
+
+
+      <div class="question-answer">
+        <p class="main-question">How can I contact you for support or inquiries?</p>
+        <p class="main-answer">
+          You can contact us through the contact page, we will respond within 3-4 business days
+        </p>
+      </div>
+
+
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="main-text">
+        <h1>Contact Us</h1>
+      </div>
+      <form action="https://formsubmit.co/d789003f8ae2b89c67b2550ca65336f5 " method="post" id="Form">
+        <div class="row">
+          <div class="contact-form padd-15">
+            <div class="row">
+              <div class="form-item col-6 padd-15">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name :" name="name" required="required">
+                </div>
+              </div>
+              <div class="form-item col-6 padd-15">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="E-mail :" name="email" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="subject:" name="subject" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <div class="form-group">
+                  <textarea name="message" class="form-control" id="" placeholder="Message :"
+                    required="required"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <button type="submit" value="submit" class="btn">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="_next"
+          value="https://the-inception-bros.github.io/AIWeb.github.io/Submitted/submitted.html">
+        <input type="hidden" name="_subject" value="New submission From AIWeb">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Form Submitted">
+      </form>
+    </section>
+
+  </div>
+  <!-- !main content end -->
+  </div>
+
+  <footer>
+    <hr class="hr">
+    <div class="footer-info">
+      <a href="https://github.com/the-inception-bros/"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@alanbetty"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://x.com/AlanPBetty"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <hr id="no2">
+    <div class="copyright">
+      <p>&copy; 2024 Nexus. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+<!-- <script src="categorytest.js"></script> -->
+<script src="index.js"></script>
+
+
+</html>

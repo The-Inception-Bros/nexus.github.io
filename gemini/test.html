@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Descriptions</title>
+    <style>
+        .content {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .list-heading {
+            font-weight: bold;
+        }
+        .list-description {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI Tools</h1>
+    <div id="content-container"></div> <!-- This is where the list of AI tools will appear -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('response.json')  // Adjust the path if the file is in a different location
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();  // Convert the response to JSON
+            })
+            .then(data => {
+                const contentContainer = document.getElementById('content-container');  // Get the container element
+        
+                // Check if data.responses is an array
+                if (Array.isArray(data.responses)) {
+                    data.responses.forEach(tool => {
+                        // Create a new content div for each tool
+                        const contentDiv = document.createElement('div');
+                        contentDiv.className = 'content';
+        
+                        // Populate the inner HTML with tool data
+                        contentDiv.innerHTML = `
+                            <p class="list-heading">${tool.input}</p>
+                            <p class="list-description">${tool.response}</p>
+                        `;
+        
+                        // Append the content div to the container
+                        contentContainer.appendChild(contentDiv);
+                    });
+                } else {
+                    console.error('Expected data.responses to be an array:', data.responses);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching the JSON file:', error);
+            });
+        });
+        
+    </script>
+</body>
+</html>
