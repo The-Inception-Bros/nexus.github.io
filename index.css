@@ -63,7 +63,7 @@ ul {
     height: 100vh;
     width: 250px;
     background: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: flex-start;
@@ -72,14 +72,14 @@ ul {
 }
 
 .nav-control{
-    top: 0;
     left: 0;
-    right: 0;
+    top: 0;
     bottom: 0;
+    right: 0;
     margin: auto;
-    border: 1px solid var(--wt1);
-    width: 60vh;
     height: 40vh;
+    border: 1px;
+    border-radius: 17px;
 }
 
 .nav-control a{
@@ -87,6 +87,7 @@ ul {
     right: 0;
     margin: auto;
     display: block;
+    border-bottom: 1px solid var(--wt1);
 }
 
 
@@ -124,6 +125,7 @@ ul {
     color: var(--wt2);
     font-size: 50px;
     font-family: 'Exo';
+    font-weight: 500;
 }
 
 .main-content {
@@ -140,38 +142,58 @@ ul {
     color: var(--mc);
 }
 
-.searchbar {
-    display: inline;
+
+.wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    justify-content: center;
 
+    button .search{
+        border: none;
+        padding: 15px;
+        margin-left: -50px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+.search-wrapper {
+    display: flex;
+}
+
+.wrapper .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 #searchbar {
-    margin: 200px;
-    margin-bottom: 0;
-    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     padding: 10px;
     border-radius: 30px;
-    width: 50%;
     box-sizing: border-box;
     height: 50px;
     border: none;
-    max-height: 200px;
-    display: inline;
+    width: 90vh;
+
 }
 
-#search {
-    margin: 10px;
+input {
     padding: 20px;
-    height: 50px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    margin-top: 3.5%;
-    margin-left: 55%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 400px;
+}
+
+.button-value button {
+    display: flew;
+    gap: 10px;
 }
 
 #list {
@@ -378,9 +400,9 @@ ul {
 /* About us page */
 
 .main-text {
-    color: var(--mc);
+    color: var(--sc);
     font-weight: 700;
-    margin-left: 40%;
+    margin-left: 35%;
     margin-top: 2%;
     font-size: 50px;
     font-family: 'Poppins';
@@ -425,8 +447,11 @@ footer {
     position: relative;
     bottom: 0px;
     width: 100%;
+    height: 30vh;
     margin-bottom: 0;
     margin-top: 375px;
+    background: #1b1b1b;
+    padding-top: 10px;
 }
 
 hr {
@@ -499,6 +524,7 @@ hr {
     overflow: hidden;
     animation: caret 0.5s steps(1) infinite;
     margin-top: 100px;
+    margin-bottom: 10vh;
     padding-top: 0;
     padding-right: 20px;
     position: relative;
@@ -516,14 +542,11 @@ hr {
     display: none;
 }
 
-
-
-
-
 #content {
     display: grid;
     grid-template-columns: repeat(3,1fr); /* Responsive */
     gap: 16px;
+    margin-top: 20vh;
  
 }
 
@@ -636,80 +659,65 @@ hr {
     align-items: center;
     z-index: 10;
     margin: 0;
+    margin-left: 30px;
 }
 
 #closeSidebar{
     float: right;
 }
 
+/* Base Styles (for larger screens) */
+.card {
+    max-width: 100%; /* Adjust max-width for larger screens */
+}
 
+#products {
+    display: grid; /* Ensure products are displayed in a grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    grid-column-gap: 1em;
+}
 
+.searchbutton {
+    color: var(--bg2);
+    margin-top: 2%;
+    margin-left: -6%;
+}
 
-
-
-
-
-
-
-
-@media screen and (max-width: 720px) {
-    .card {
-      max-width: 10em;
-      margin-top: 1em;
-    }
-    #products {
-      grid-template-columns: auto auto;
-      grid-column-gap: 1em;
-    }
+.button-value.active {
+    background-color: var(--sc);
+    color: var(--wt1);
   }
 
 
-/* !Media Query */
-@media screen and (max-widtH: 2560px){
-    #searchbar{
-        width: 50%;
-    }
 
-    #search{
-        top: -100px;
-    }
-    
-}
+
 
 @media screen and (max-width: 1440px) {
-    #search {
-        margin-left: 85%;
-    }
-
-    #searchbar {
-        width: 75%;
-    }
-
     #typewriter {
         left: 21%;
     }
 
     .mobile {
-        display: none;
+        display: none; /* Hide mobile-specific elements */
     }
 
-    .card{
+    .card {
         width: 90%;
     }
 
-    .product-name{
+    .product-name {
         font-size: 25px;
     }
 
-    .product-category{
+    .product-category {
         font-size: 15px;
     }
 
-    .product-description{
+    .product-description {
         font-size: 20px;
     }
 
-    .list-button{
+    .list-button {
         height: 8;
     }
 }
@@ -718,9 +726,6 @@ hr {
     #typewriter {
         left: 16%;
     }
-    .mobile {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -728,70 +733,37 @@ hr {
         font-size: 50px;
     }
 
-    #search {
-        margin-left: 95%;
-    }
-
-    #searchbar {
-        width: 85%;
-    }
-    .mobile {
-        display: none;
-    }
-
-    .list-button{
-        width: 25vh;
+    .list-button {
         height: 30px;
         margin-left: 10%;
     }
 
-    .product-description{
+    .product-description {
         font-size: 17px;
     }
 }
 
 @media screen and (max-width: 900px) {
-
     #typewriter {
         left: 18%;
     }
 
     #hideOnMobile {
-        display: none;
+        display: none; /* Hide mobile-specific elements */
     }
 
     .mobile {
-        display: contents;
+        display: contents; /* Show mobile-specific elements */
     }
 
     .heading {
         font-size: 40px;
-        left: 0;
-        right: 0;
-        margin: auto;
+        margin: auto; /* Center heading */
     }
 
     .content {
         width: 95%;
-        margin: auto;
-    }
-
-    .side-nav{
-        width: 100%;
-        height: 100vh;
-        z-index: 1000;
-        background: var(--bg1);
-    }
-
-    .side-nav li{
-        left: 0;
-        right: 0;
-        margin-top: 10px;
-        margin: auto;
-    }
-
-    #closeSidebar{
-        margin-right: 0;
+        margin: auto; /* Center content */
     }
 
     .side-nav {
@@ -800,41 +772,32 @@ hr {
 
     .side-nav.active {
         display: flex; /* Show when active */
+        width: 125vh;
     }
-}
-
-@media screen and (max-width: 920px) {
-    #content{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+    .nav-control{
+        margin-bottom: 30vh;
     }
-
-    .list-button{
-        margin-left: 0;
-        margin-top: 10px;
+    #closeSidebar {
+        float: right;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #searchbar {
-        margin-top: 40px;
-        width: 75%;
-        margin-left: 100px;
-        height: 40px;
-    }
-
-    .main-text{
+    .main-text {
         margin-left: 30%;
     }
 
-    #search {
-        right: 10%;
-        height: 40px;
-        top: -249px;
+    .search-wrapper {
+        display: flex;
+        align-items: center;
+        
+        input {
+            width: 200px;
+        }
+    }
 
-        padding: 12.5px;
-        padding-top: 15px;
-        margin-top: 27%;
+    #searchbar{
+        width: 100%;
     }
 
     #typewriter {
@@ -842,17 +805,13 @@ hr {
     }
 
     .side-nav {
-        width: 100%; /* Full width on mobile */
-        background: var(--bg1); /* Consistent background */
+        width: 80%; /* Full width on mobile */
+        flex-direction: column; /* Stack items */
     }
 
-    .side-nav.active {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mobile {
-        display: contents;
+    .nav-control {
+        margin-bottom: 40vh;
+        margin-right: 45vh;
     }
 
     .side-nav li {
@@ -862,38 +821,39 @@ hr {
 
     .card {
         margin: 0 auto; /* Center content */
-        padding: 20px; /* Add some padding */
-        width: 95%; /* Make it responsive */
-        max-width: 1200px; /* Prevent it from stretching too wide */
+        padding: 20px; /* Add padding */
+        width: 80%; /* Responsive width */
+        max-width: 1200px; /* Prevent stretching */
     }
 
-    #content{
+    #content {
+        margin-top: 20px;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .list-button {
-        width: 50vh;
-        margin-left: 0;
+        grid-template-columns: repeat(1, 1fr); /* Single column layout */
     }
 
-    .product-name{
+    .product-name {
         font-size: 38px;
         margin-bottom: -5vh;
     }
 
-    .product-description{
+    .product-description {
         margin-bottom: 5vh;
         font-size: 19px;
     }
 
-    .product-category{
+    .product-category {
         font-size: 17px;
     }
 
-    .main-text h1{
+    .main-text h1 {
         font-size: 60px;
     }
 
+    .contact .contact-form .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -901,51 +861,50 @@ hr {
         font-size: 30px;
     }
 
-    .mobile {
-        display: contents;
-    }
-
-    .main-text{
+    .main-text {
         margin-left: 20%;
     }
 
-    .main-question{
+    .main-question {
         font-size: 35px;
     }
 
-    .main-answer{
+    .main-answer {
         font-size: 20px;
+    }
+    .nav-control {
+        margin-right: 38vh;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .heading{
+    .heading {
         font-size: 28px;
-    }
-
-    #search{
-        margin-top: 48%;
-    }
-
-    #searchbar{
-        margin-left: 22vh;
     }
 
     .logo a {
         font-size: 35px;
-        margin-left: -5vh;
         float: left;
         position: relative;
-        top: -3vh
+        top: -3vh;
     }
 
-    .product-name{
-        font-size: 28px;
+    .product-name {
+        font-size: 23px;
     }
 
-    .main-text{
+    .product-category{
+        font-size: 19px;
+    }
+
+    .main-text {
         font-size: 40px;
     }
+    .nav-control {
+        margin-right: 20vh;
+    }
+
+    
 }
 
 @media screen and (max-width: 375px) {
@@ -953,32 +912,28 @@ hr {
         width: 50%;
     }
 
-    .mobile {
-        display: contents;
-    }
-
-    .heading{
+    .heading {
         font-size: 20px;
         margin-bottom: -7vh;
     }
 
-    #search{
-        margin-top: 55%;
-    }
-
-    .main-text{
+    .main-text {
         font-size: 35px;
     }
 
-    .main-question{
+    .main-question {
         font-size: 30px;
+    }
+
+    #searchbar{
+        height: 40px;
     }
 }
 
-@media screen and (max-width: 320px){
-    #search{
-        margin-top: 65%;
+
+
+@media screen and (max-width: 3200px) {
+    .nav-control {
+        margin-right: 15vh;
     }
-
-
 }
