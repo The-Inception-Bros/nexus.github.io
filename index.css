@@ -120,7 +120,6 @@ ul {
     font-family: 'Poppins';
 }
 
-
 .logo a {
     color: var(--wt2);
     font-size: 50px;
@@ -559,11 +558,31 @@ hr {
     height: 55vh;
     width: 50vh;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
     margin: 20px;
     display: inline-block;
-    
+    cursor: pointer;
 }
+
+/* Enlarged state */
+.card.enlarged {
+    transform: scale(1.2);  /* Slightly enlarges the card */
+    width: 70vh;
+    height: 70vh;
+    z-index: 1000; /* Ensure the card is above others */
+}
+
+/* Add transition for content opacity */
+.card-content {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hide content initially in the enlarged state */
+.card.enlarged .card-content {
+    opacity: 0;
+}
+
 
 .card:hover {
     transform: scale(1.05);
