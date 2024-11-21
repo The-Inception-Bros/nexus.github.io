@@ -16,7 +16,7 @@ Welcome to **Nexus**, a curated platform for discovering and exploring the most 
 - **Styling**: Grid and card layouts for an elegant user experience.
 
 ## 🚀 How to Access
-Visit the live website here: [Nexus](https://the-inception-bros.github.io/nexus.github.io/)
+Visit the live website here: [Nexus](https://the-inception-bros.github.io/nexus.github.io/landing%202.html)
 
 ## 🤝 Contributing
 We welcome contributions! Here's how you can help:
