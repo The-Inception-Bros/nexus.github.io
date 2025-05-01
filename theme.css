@@ -6,6 +6,7 @@
   --wt2: #e9e9e9;
   --mc: #e8b923;
   --sc: #4A90E2;
+  --sc2: #24262b;
   --sun: #e8b923;
 }
 
@@ -15,8 +16,9 @@ body.light {
   --bg3: #f2f2fc;
   --wt1: #302e4d;
   --wt2: #504e70;
-  --mc: #493905;
+  --mc: #ffffff;
   --sc: #4A90E2;
+  --sc2: #ffffff;
   --sun: #000000;
 }
 
@@ -86,7 +88,7 @@ label .ball {
   height: 25px;
   top: 5px;
   left: 5px;
-  background: var(--wt1);
+  background: var(--wt2);
   border-radius: 50%;
   transition: 0.8s;
 }
@@ -100,7 +102,8 @@ label .fa-moon {
 }
 
 input:checked+label .fa-moon {
-  transform: translateX(0);
+  transform: transl 
+  ateX(0);
 }
 
 label {
@@ -130,4 +133,3 @@ label .fa-moon {
 input:checked+label .fa-moon {
   transform: translateX(0), rotate(0);
 }
-

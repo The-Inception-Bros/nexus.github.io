@@ -64,6 +64,7 @@
         <!-- !searchbar start -->
         <div class="double-check">
           <div id="typewriter" class="heading typing"></div>
+          <div id="typewriterbutnotreally" class="heading">Discover The Power Of AI</div>
         </div>
 
 
@@ -204,19 +205,22 @@
         </div>
 
         <form id="reviewForm">
-          <div class="autocomplete">
-            <input autocomplete="off" class="review-item content-input" type="text" id="productInput"
-              placeholder="Type product name..." required>
-            <div id="autocomplete-list" class="autocomplete-items"></div>
-          </div>
-          <div class="select-wrapper">
-            <select class="review-item" id="rating" required>
-              <option value="5">5</option>
-              <option value="4">4</option>
-              <option value="3">3</option>
-              <option value="2">2</option>
-              <option value="1">1</option>
-            </select>
+          <div class="align-wrapper">
+            <div class="autocomplete">
+              <input autocomplete="off" class="review-item content-input" type="text" id="productInput"
+                placeholder="Type product name..." required>
+              <div id="autocomplete-list" class="autocomplete-items"></div>
+            </div>
+            <div class="select-wrapper">
+              <select class="review-item" id="rating" required>
+                <option value="" disabled selected>Select Your Rating...</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+            </div>
           </div>
 
           <textarea id="reviewText" class="review-item" placeholder="Write your review..." required></textarea>
@@ -267,7 +271,7 @@
             </div>
           </div>
           <div class="copyright">
-            <p>&copy; 2024 Nexus. All Rights Reserved.</p>
+            <p>&copy; 2025 Nexus. All Rights Reserved.</p>
           </div>
         </div>
      </footer>

@@ -11,6 +11,7 @@
     --wt2: #e9e9e9;
     --mc: #e8b923;
     --sc: #4A90E2;
+    --sc2: #24262b;
     --sun: #e8b923;
 }
 
@@ -20,8 +21,9 @@ body.light {
     --bg3: #f2f2fc;
     --wt1: #302e4d;
     --wt2: #504e70;
-    --mc: #493905;
+    --mc: #ffffff;
     --sc: #4A90E2;
+    --sc2: #ffffff;
     --sun: #000000;
 }
 
@@ -242,7 +244,7 @@ ul {
 input {
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #777;
     font-size: 16px;
     width: 400px;
 }
@@ -501,66 +503,75 @@ input {
     top: 0;
 }
 
-.footer{
+.footer {
     margin-top: 5vh;
-	background-color: #24262b;
+    background-color: var(--sc2);
     padding: 70px 0;
     margin-bottom: 0;
+    box-shadow:  2px 2px 12px rgba(0, 0, 0, 0.1);
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+
+.footer-col h4 {
+    font-size: 18px;
+    color: var(--wt1);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: var(--sc);
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--sc);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
 }
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--wt1);
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--wt2);
+    display: block;
+    transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
+
+.footer-col ul li a:hover {
+    color: var(--wt1);
+    padding-left: 8px;
 }
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #3a3a3a33;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--wt1);
+    transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+
+.footer-col .social-links a:hover {
+    color: var(--bg1);
+    background-color: var(--wt1);
 }
 
 .copyright {
@@ -570,17 +581,18 @@ input {
     text-align: center;
 }
 
-.footer-container{
-	max-width: 1170px;
-	margin:auto;
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
 }
-.footer-row{
-	display: flex;
-	flex-wrap: wrap;
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-description {
-	color: #bbbbbb;
+    color: var(--wt2);
     max-width: 72%;
 }
 
@@ -678,6 +690,8 @@ input {
     height: auto;
     border-radius: 4px;
 }
+
+
 
 .container {
     margin-top: 12px;
@@ -878,7 +892,11 @@ input {
     margin: 5vh;
 }
 
-
+#typewriterbutnotreally {
+    display: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
 
 
 
@@ -1099,6 +1117,31 @@ input {
     .nav-control {
         margin-right: 38vh;
     }
+
+    .footer-col {
+        width: 50%;
+        border-bottom: 1px solid var(--bg3);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-col:nth-child(1) {
+        border-right: 1px solid var(--bg3);
+    }
+
+    .footer-col:nth-child(2) {
+        border-left: 1px solid var(--bg3);
+    }
+
+    .footer-col:nth-child(3) {
+        border-right: 1px solid var(--bg3);
+        border-bottom: none;
+    }
+
+    .footer-col:nth-child(4) {
+        border-left: 1px solid var(--bg3);
+        border-bottom: none;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -1129,7 +1172,86 @@ input {
         margin-right: 20vh;
     }
 
-
+    .footer-col {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 37px;
+    }
+    .footer-col:nth-child(1) {
+        border-right: none;
+        border-left: none;
+    }
+    .footer-col:nth-child(2) {
+        border-right: none;
+        border-left: none;
+    }
+    .footer-col:nth-child(3) {
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid var(--bg3);
+    }
+    .footer-col:nth-child(4) {
+        border-right: none;
+        border-left: none;
+    }
+    #typewriter{
+        display: none;
+    }
+    #typewriterbutnotreally{  
+        display: block;
+        margin-bottom: 30px;
+    }
+    #filter{
+        margin-left: 5%;
+    }
+    #searchbar{
+        width: 300px;
+        border-radius: 25px;
+    }
+    .wrapper{
+        margin-left: 10px;
+    }
+    .searchbutton{
+        margin-left: -9%;
+        margin-top: 0%;
+    }
+    .card{
+        max-height: 350px;
+    }
+    .product-name{
+        margin-bottom: -1%;
+    }
+    .product-category{
+        margin-bottom: 5px
+    }
+    .product-description{
+        margin-top: -2%;
+    }
+    .list-button{
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .card.enlarged{
+        width: 90vw;
+        min-height: 50vh;
+    }
+    .aside.open{
+        width: 100%;
+    }
+    .aside .nav-toggle.open{
+        left: 85%;
+    }
+    .row{
+        max-width: 80vw;
+        margin-left: -6%;
+        margin-right: -25%;
+    }
+    .main-text h1{
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1152,6 +1274,9 @@ input {
 
     #searchbar {
         height: 40px;
+    }
+    #filter{
+        margin-left: 8%;
     }
 }
 
@@ -1295,9 +1420,8 @@ input {
 .autocomplete .content-input {
     background: var(--bg2);
     border-radius: 15px;
-    flex: 0 0 50%;
-    width: 50%;
     display: inline;
+    min-width: 45vw;
 }
 
 .content-input {
@@ -1311,15 +1435,15 @@ input {
     border: 1px solid var(--bg3);
     border-radius: 4px;
     background: var(--bg2);
-    color: var(--wt1);
+    color: #777;
     border-radius: 10px;
-    flex: 0 0 50%;
     max-width: 100%;
+    height: 50px;
 }
 
 select#rating:hover {
     background-color: var(--bg2);
-    color: var(--wt1);
+    color: var(--sc2);
     cursor: pointer;
 }
 
@@ -1328,12 +1452,12 @@ select#rating::after {
     position: absolute;
     right: 16px;
     pointer-events: none;
-    color: var(--bg1);
+    color: #777;
 }
 
 #rating {
     background: var(--bg2);
-    color: var(--wt1);
+    color: #777;
     border: 1px solid var(--bg3);
     border-radius: 15px;
     flex: 0 0 50%;
@@ -1344,18 +1468,13 @@ select#rating::after {
     /* Smooth transition */
 }
 
-#rating:hover {
-    color: var(--wt1);
-    cursor: pointer;
-    /* Ensure the cursor changes on hover */
-}
 
 .select-wrapper {
-    position: relative;
+    min-width: 45vw;
 }
 
 .select-wrapper:hover #rating {
-    color: var(--wt1);
+    color: #777;
 }
 
 select {
@@ -1376,7 +1495,7 @@ select {
 #reviewForm {
     background: transparent;
     /* Make form background transparent */
-    color: var(--wt1);
+    color: #777;
     /* Text color */
     padding: 20px;
     /* Add some padding */
@@ -1401,6 +1520,7 @@ select {
     gap: 16px;
     margin-top: 5vh;
     margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 .review {
@@ -1453,4 +1573,18 @@ select {
     font-weight: 700;
     margin-top: 2%;
     font-family: 'Poppins';
+}
+
+body.light .logo img {
+    filter: brightness(0) !important;
+}
+
+.align-wrapper{
+    display: flex;
+    width: 90vw;
+}
+
+body.light .review .btn {
+    background: #eeff00 !important;
+    color: #000000 !important;
 }

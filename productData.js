@@ -112,15 +112,6 @@ export const content = {
             "link": "https://www.example.com/gemini",
             "rating": "4.6"
         },
-
-
-
-
-
-
-
-
-
         {
             "productName": "Copy.ai",
             "category": ["ContentGeneration", "MarketingAI"],
@@ -226,15 +217,6 @@ export const content = {
             "link": "https://contentatscale.ai",
             "rating": "4.4"
         },
-
-
-
-
-
-
-
-
-
         {
             "productName": "Tableau",
             "category": ["DataAnalysis", "UtilityTools"],
@@ -340,14 +322,6 @@ export const content = {
             "link": "https://monkeylearn.com",
             "rating": "4.3"
         },
-
-
-
-
-
-
-
-
         {
             "productName": "RunwayML",
             "category": ["CreativeAI", "ImageEditing"],
@@ -453,130 +427,104 @@ export const content = {
             "link": "https://www.fotor.com",
             "rating": "4.4"
         },
-
-
-
-
-
-
-
-
-
-
         {
-        "productName": "Adobe Photoshop AI (Firefly)",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI tools for image generation and editing.",
-        "link": "https://www.adobe.com/products/photoshop.html",
-        "rating": "4.7"
-    },
-    {
-        "productName": "Canva",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-enhanced graphic design platform.",
-        "link": "https://www.canva.com",
-        "rating": "4.6"
-    },
-    {
-        "productName": "Luminar AI",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-powered photo editor for advanced enhancements.",
-        "link": "https://skylum.com/luminar-ai",
-        "rating": "4.5"
-    },
-    {
-        "productName": "Fotor",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "Online AI photo editor with automatic enhancements.",
-        "link": "https://www.fotor.com",
-        "rating": "4.4"
-    },
-    {
-        "productName": "Remove.bg",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI tool for removing backgrounds from images.",
-        "link": "https://www.remove.bg",
-        "rating": "4.5"
-    },
-    {
-        "productName": "Let’s Enhance",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-based image upscaling and enhancement.",
-        "link": "https://letsenhance.io",
-        "rating": "4.3"
-    },
-    {
-        "productName": "Topaz Labs",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI tools for enhancing image resolution and detail.",
-        "link": "https://topazlabs.com",
-        "rating": "4.4"
-    },
-    {
-        "productName": "Crello",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-powered graphic design tool with pre-built templates.",
-        "link": "https://crello.com",
-        "rating": "4.3"
-    },
-    {
-        "productName": "Pixelmator Pro",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-enhanced image editing software.",
-        "link": "https://www.pixelmator.com/pro",
-        "rating": "4.5"
-    },
-    {
-        "productName": "AutoRetouch",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI for automated image editing, especially in fashion.",
-        "link": "https://autoretouch.com",
-        "rating": "4.2"
-    },
-    {
-        "productName": "FaceApp",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-powered photo transformation and editing.",
-        "link": "https://www.faceapp.com",
-        "rating": "4.6"
-    },
-    {
-        "productName": "BeFunky",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-powered photo editor for basic and advanced edits.",
-        "link": "https://www.befunky.com",
-        "rating": "4.3"
-    },
-    {
-        "productName": "Artisto",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI-powered video and image editing app.",
-        "link": "https://artisto.net",
-        "rating": "4.1"
-    },
-    {
-        "productName": "GIMP",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "Open-source image editor with AI plugins.",
-        "link": "https://www.gimp.org",
-        "rating": "4.0"
-    },
-    {
-        "productName": "AI Image Enlarger",
-        "category": ["ImageEditing", "CreativeAI"],
-        "description": "AI tool for enhancing and enlarging images.",
-        "link": "https://imglarger.com",
-        "rating": "4.2"
-    },
-
-
-
-
-
-
-
-
-        ,
+            "productName": "Adobe Photoshop AI (Firefly)",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI tools for image generation and editing.",
+            "link": "https://www.adobe.com/products/photoshop.html",
+            "rating": "4.7"
+        },
+        {
+            "productName": "Canva",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-enhanced graphic design platform.",
+            "link": "https://www.canva.com",
+            "rating": "4.6"
+        },
+        {
+            "productName": "Luminar AI",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-powered photo editor for advanced enhancements.",
+            "link": "https://skylum.com/luminar-ai",
+            "rating": "4.5"
+        },
+        {
+            "productName": "Remove.bg",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI tool for removing backgrounds from images.",
+            "link": "https://www.remove.bg",
+            "rating": "4.5"
+        },
+        {
+            "productName": "Let’s Enhance",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-based image upscaling and enhancement.",
+            "link": "https://letsenhance.io",
+            "rating": "4.3"
+        },
+        {
+            "productName": "Topaz Labs",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI tools for enhancing image resolution and detail.",
+            "link": "https://topazlabs.com",
+            "rating": "4.4"
+        },
+        {
+            "productName": "Crello",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-powered graphic design tool with pre-built templates.",
+            "link": "https://crello.com",
+            "rating": "4.3"
+        },
+        {
+            "productName": "Pixelmator Pro",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-enhanced image editing software.",
+            "link": "https://www.pixelmator.com/pro",
+            "rating": "4.5"
+        },
+        {
+            "productName": "AutoRetouch",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI for automated image editing, especially in fashion.",
+            "link": "https://autoretouch.com",
+            "rating": "4.2"
+        },
+        {
+            "productName": "FaceApp",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-powered photo transformation and editing.",
+            "link": "https://www.faceapp.com",
+            "rating": "4.6"
+        },
+        {
+            "productName": "BeFunky",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-powered photo editor for basic and advanced edits.",
+            "link": "https://www.befunky.com",
+            "rating": "4.3"
+        },
+        {
+            "productName": "Artisto",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI-powered video and image editing app.",
+            "link": "https://artisto.net",
+            "rating": "4.1"
+        },
+        {
+            "productName": "GIMP",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "Open-source image editor with AI plugins.",
+            "link": "https://www.gimp.org",
+            "rating": "4.0"
+        },
+        {
+            "productName": "AI Image Enlarger",
+            "category": ["ImageEditing", "CreativeAI"],
+            "description": "AI tool for enhancing and enlarging images.",
+            "link": "https://imglarger.com",
+            "rating": "4.2"
+        },
         {
             "productName": "Pictory",
             "category": ["VideoTools", "ContentGeneration"],
@@ -682,26 +630,12 @@ export const content = {
             "link": "",
             "rating": "4.7"
         },
-
-
-
-
-
-
-
         {
             "productName": "AIVA",
             "category": ["AudioTools", "CreativeAI"],
             "description": "AI music composition platform.",
             "link": "https://www.aiva.ai",
             "rating": "4.6"
-        },
-        {
-            "productName": "Descript",
-            "category": ["AudioTools", "VideoTools"],
-            "description": "AI-powered audio editing tool with transcription.",
-            "link": "https://www.descript.com",
-            "rating": "4.7"
         },
         {
             "productName": "Sonix",
@@ -794,13 +728,6 @@ export const content = {
             "link": "https://www.ampermusic.com",
             "rating": "4.5"
         },
-
-
-
-
-
-
-
         {
             "productName": "Notion AI",
             "category": ["Productivity", "UtilityTools"],
@@ -906,19 +833,6 @@ export const content = {
             "link": "https://friday.app",
             "rating": "4.4"
         },
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
         {
             "productName": "Socratic by Google",
             "category": ["EdTech", "Communication"],
@@ -1017,13 +931,6 @@ export const content = {
             "link": "https://altaml.com",
             "rating": "4.5"
         },
-
-
-
-        
-        
-        
-        
         {
             "productName": "MarketMuse",
             "category": ["MarketingAI", "DataAnalysis"],
@@ -1129,15 +1036,6 @@ export const content = {
             "link": "https://www.wordstream.com",
             "rating": "4.5"
         },
-        
-
-        
-        
-
-
-        
-        
-        
         {
             "productName": "Crystal",
             "category": ["Communication", "DataAnalysis"],
@@ -1160,24 +1058,10 @@ export const content = {
             "rating": "4.7"
         },
         {
-            "productName": "Rephrase.ai",
-            "category": ["Communication", "VideoTools"],
-            "description": "AI-driven video communication tool for personalized videos.",
-            "link": "https://rephrase.ai",
-            "rating": "4.4"
-        },
-        {
             "productName": "Loom",
             "category": ["Communication", "VideoTools"],
             "description": "AI-powered video messaging tool for asynchronous communication.",
             "link": "https://www.loom.com",
-            "rating": "4.6"
-        },
-        {
-            "productName": "Otter.ai",
-            "category": ["Communication", "Productivity"],
-            "description": "AI for transcribing and summarizing meetings.",
-            "link": "https://otter.ai",
             "rating": "4.6"
         },
         {
@@ -1236,15 +1120,6 @@ export const content = {
             "link": "https://www.rev.ai",
             "rating": "4.6"
         },
-        
-
-
-        
-        
-        
-        
-        
-        
         {
             "productName": "Giphy",
             "category": ["GIFsAndMedia", "Communication"],
@@ -1265,20 +1140,6 @@ export const content = {
             "description": "AI tool for generating memes and GIFs.",
             "link": "https://imgflip.com",
             "rating": "4.4"
-        },
-        {
-            "productName": "Kapwing",
-            "category": ["GIFsAndMedia", "VideoTools"],
-            "description": "AI-powered video, GIF, and meme editing platform.",
-            "link": "https://www.kapwing.com",
-            "rating": "4.6"
-        },
-        {
-            "productName": "DeepAI",
-            "category": ["GIFsAndMedia", "CreativeAI"],
-            "description": "AI tool for creating animated GIFs and videos.",
-            "link": "https://deepai.org",
-            "rating": "4.5"
         },
         {
             "productName": "Flixier",
@@ -1337,20 +1198,6 @@ export const content = {
             "rating": "4.4"
         },
         {
-            "productName": "Crello",
-            "category": ["GIFsAndMedia", "CreativeAI"],
-            "description": "AI-driven tool for creating animated GIFs and graphics.",
-            "link": "https://crello.com",
-            "rating": "4.5"
-        },
-            
-        
-        
-        
-
-
-
-        {
             "productName": "Zapier",
             "category": ["UtilityTools", "Productivity"],
             "description": "AI automation for connecting apps and automating workflows.",
@@ -1365,32 +1212,11 @@ export const content = {
             "rating": "4.5"
         },
         {
-            "productName": "Scribe",
-            "category": ["UtilityTools", "Productivity"],
-            "description": "AI tool for creating step-by-step process guides automatically.",
-            "link": "https://scribehow.com",
-            "rating": "4.6"
-        },
-        {
             "productName": "Wolfram Alpha",
             "category": ["UtilityTools", "DataAnalysis"],
             "description": "AI-powered computational knowledge engine.",
             "link": "https://www.wolframalpha.com",
             "rating": "4.6"
-        },
-        {
-            "productName": "Otter.ai",
-            "category": ["UtilityTools", "Communication"],
-            "description": "AI transcription and note-taking assistant.",
-            "link": "https://otter.ai",
-            "rating": "4.6"
-        },
-        {
-            "productName": "Trello AI",
-            "category": ["UtilityTools", "Productivity"],
-            "description": "AI features for task management and collaboration.",
-            "link": "https://trello.com",
-            "rating": "4.5"
         },
         {
             "productName": "ClickUp AI",
@@ -1412,13 +1238,6 @@ export const content = {
             "description": "AI-powered email management tool for inbox filtering.",
             "link": "https://www.sanebox.com",
             "rating": "4.4"
-        },
-        {
-            "productName": "Motion",
-            "category": ["UtilityTools", "Productivity"],
-            "description": "AI scheduling and task automation tool.",
-            "link": "https://motionapp.com",
-            "rating": "4.5"
         },
         {
             "productName": "Hootsuite",
@@ -1448,15 +1267,6 @@ export const content = {
             "link": "https://emailtree.ai",
             "rating": "4.5"
         },
-
-
-
-
-
-
-
-
-
         {
             "productName": "Beautiful.ai",
             "category": ["PresentationAI", "CreativeAI"],
@@ -1562,14 +1372,6 @@ export const content = {
             "link": "https://www.emaze.com",
             "rating": "4.5"
         },
-
-
-
-
-
-
-
-
         {
             "productName": "DeepL",
             "category": ["TranslationTools", "Communication"],
@@ -1675,15 +1477,6 @@ export const content = {
             "link": "https://www.reverso.net",
             "rating": "4.5"
         },
-
-
-
-
-
-
-
-
-
         {
             "productName": "Wordtune",
             "category": ["LanguageGames", "Productivity"],
@@ -1788,8 +1581,22 @@ export const content = {
             "description": "AI-powered tool for improving language skills and grammar.",
             "link": "https://linguix.com",
             "rating": "4.4"
-        },
+        }
     ]
 };
+
+// Deduplicate records (keep first occurrence; do not add extra categories)
+{
+    let seen = new Set();
+    content.data = content.data.filter(item => {
+        let key = item.productName.trim().toLowerCase();
+        if (seen.has(key)) {
+            return false;
+        } else {
+            seen.add(key);
+            return true;
+        }
+    });
+}
 
 export default content;
