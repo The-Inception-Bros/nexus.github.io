@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIWeb</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="theme.css">
+  <link href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=light_mode" />
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+
+  <div class="aside">
+    <div class="logo">
+      <a href="#home" class="nav-buttons"><span class="img-control"><img class="logo-image" src="Nexus.png"
+            alt="Nexus Logo"></span></a>
+    </div>
+
+
+    <div class="nav-toggle">
+      <span></span>
+    </div>
+
+    <ul class="nav">
+      <div class="switch-container">
+        <input type="checkbox" id="switch" checked>
+        <label for="switch">
+          <i class="fas fa-moon lightdark"></i>
+          <i class="fas fa-sun lightdark"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+
+
+      <li><a href="#home" class="nav-buttons active"><i class="fa-regular fa-house"></i> Home</a></li>
+      <li><a href="#about" class="nav-buttons "><i class="fa-regular fa-circle-info"></i> About</a></li>
+      <li><a href="#contact" class="nav-buttons "><i class="fa-regular fa-messages"></i> Contact</a></li>
+      <li><a href="Login-Register/profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+      <li><a href="#review" class="nav-buttons"><i class="fa-regular fa-star"></i> Review</a></li>
+
+    </ul>
+
+  </div>
+
+  <div class="overlay">
+    <!-- !main content start -->
+    <div class="main-content">
+      <section class="section home active" id="home">
+
+
+
+        <!-- !searchbar start -->
+        <div class="double-check">
+          <div id="typewriter" class="heading typing"></div>
+          <div id="typewriterbutnotreally" class="heading">Discover The Power Of AI</div>
+        </div>
+
+
+        <div class="wrapper">
+          <div class="search-wrapper">
+            <input id="searchbar" type="text" name="search" placeholder="Start Searching.." autocomplete="off">
+            <div class="searchbar searchbutton" id="search"><i class="fas fa-search search"></i></div>
+            <div class="button-control category-heading" id="filter"><i class="fa-thin fa-filter-list"></i></div>
+          </div>
+
+          <div id="buttons">
+            <button class="button-value category" onclick="filterProduct('all')">All</button>
+            <button class="button-value category" onclick="filterProduct('Chatbots')">Chatbots</button>
+            <button class="button-value category" onclick="filterProduct('ContentGeneration')">ContentGeneration</button>
+            <button class="button-value category" onclick="filterProduct('DataAnalysis')">DataAnalysis</button>
+            <button class="button-value category" onclick="filterProduct('CreativeAI')">CreativeAI</button>
+            <button class="button-value category" onclick="filterProduct('ImageEditing')">ImageEditing</button>
+            <button class="button-value category" onclick="filterProduct('VideoTools')">VideoTools</button>
+            <button class="button-value category" onclick="filterProduct('AudioTools')">AudioTools</button>
+            <button class="button-value category" onclick="filterProduct('Productivity')">Productivity</button>
+            <button class="button-value category" onclick="filterProduct('EdTech')">EdTech</button>
+            <button class="button-value category" onclick="filterProduct('MarketingAI')">MarketingAI</button>
+            <button class="button-value category" onclick="filterProduct('Communication')">Communication</button>
+            <button class="button-value category" onclick="filterProduct('GIFsAndMedia')">GIFsAndMedia</button>
+            <button class="button-value category" onclick="filterProduct('UtilityTools')">UtilityTools</button>
+            <button class="button-value category" onclick="filterProduct('PresentationAI')">PresentationAI</button>
+            <button class="button-value category" onclick="filterProduct('TranslationTools')">TranslationTools</button>
+            <button class="button-value category" onclick="filterProduct('LanguageGames')">LanguageGames</button>
+          </div>
+
+          <div id="content"></div>
+          <div id="no-results"> No Search Results Found.</div>
+        </div>
+      </section>
+
+
+      <section class="section about" id="about">
+        <p class="main-text">FAQ Section</p>
+        <hr>
+        <div class="question-answer">
+          <p class="main-question">What is Nexus?</p>
+          <p class="main-answer">
+            Nexus is a free to use website which helps you
+            find the correct tool for your job
+          </p>
+        </div>
+
+
+        <div class="question-answer">
+          <p class="main-question">What is Freemium?</p>
+          <p class="main-answer">
+            Freemium is a keyword used in Nexus to describe certain websites
+            which is free for only for a few tries after which you will need to pay to continue
+          </p>
+        </div>
+
+
+        <div class="question-answer">
+          <p class="main-question">Are the AI tools listed here free to use?</p>
+          <p class="main-answer">
+            As given in the description of the tools, some of the tools present in Nexus are free, freemium, or
+            premium.<br> Feel free to check out!
+          </p>
+        </div>
+
+
+        <div class="question-answer">
+          <p class="main-question">Do you provide reviews or ratings for the tools?</p>
+          <p class="main-answer">
+            Yes, we do . check it out.
+          </p>
+        </div>
+
+
+        <div class="question-answer">
+          <p class="main-question">How can I contact you for support or inquiries?</p>
+          <p class="main-answer">
+            You can contact us through the contact page, we will respond within 3-4 business days
+          </p>
+        </div>
+
+
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="main-text">
+          <h1>Contact Us</h1>
+        </div>
+        <form action="https://formsubmit.co/d789003f8ae2b89c67b2550ca65336f5 " method="post" id="Form">
+          <div class="row">
+            <div class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name :" name="name" required="required">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="E-mail :" name="email" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="subject:" name="subject" required="required" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="message" class="form-control" id="" placeholder="Message :"
+                      required="required"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button type="submit" value="submit" class="btn">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <input type="hidden" name="_next"
+            value="https://the-inception-bros.github.io/AIWeb.github.io/Submitted/submitted.html">
+          <input type="hidden" name="_subject" value="New submission From AIWeb">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_autoresponse" value="Form Submitted">
+        </form>
+      </section>
+
+
+      <section class="section review" id="review">
+        <div class="review-head">
+          <h1 class="review-text">Reviews</h1>
+        </div>
+
+        <form id="reviewForm">
+          <div class="align-wrapper">
+            <div class="autocomplete">
+              <input autocomplete="off" class="review-item content-input" type="text" id="productInput"
+                placeholder="Type product name..." required>
+              <div id="autocomplete-list" class="autocomplete-items"></div>
+            </div>
+            <div class="select-wrapper">
+              <select class="review-item" id="rating" required>
+                <option value="" disabled selected>Select Your Rating...</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+          </div>
+
+          <textarea id="reviewText" class="review-item" placeholder="Write your review..." required></textarea>
+          <button class="btn" type="submit">Submit Review</button>
+        </form>
+
+        <div id="reviewsList">
+          <!-- User reviews will be displayed here -->
+        </div>
+      </section>
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Nexus</h4>
+              <p class="footer-description">This Is a Website named 'Nexus' which was built up from scratch from an Interesting Idea On Connecting AI's In a Single Place</p>
+            </div>
+            <div class="footer-col">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a class="nav-buttons" href="#home">Home</a></li>
+                <li><a class="nav-buttons" href="#about">FAQ</a></li>
+                <li><a class="nav-buttons" href="#contact">Contact Us</a></li>
+                <li><a href="Login-Register/profile.html">Your Account</a></li>
+                <li><a class="nav-buttons" href="#review">Review The AI's</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <ul>
+                <li><a href="#"><i class="footer-icons fas fa-house"></i>Kerala, KL 123456, IN</a></li>
+                <li><a href="#"><i class="footer-icons fas fa-envelope"></i>info@nexus.com</a></li>
+                <li><a href="#"><i class="footer-icons fas fa-phone"></i>+91 1234567890</a></li>
+                <li><a href="#"><i class="footer-icons fas fa-print"></i>+91 1234567890</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a target="_blank" href="https://github.com/the-inception-bros/"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/@alanbetty"><i class="fa-brands fa-youtube"></i></a>
+                <a target="_blank" href="https://x.com/AlanPBetty"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2025 Nexus. All Rights Reserved.</p>
+          </div>
+        </div>
+     </footer>
+    
+    
+
+
+    </div>
+  </div>
+  <!-- !main content end -->
+
+
+  <script src="productData.js"></script>
+  <script src="index.js" type="module"></script>
+  <script src="review.js" type="module"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+:root {
+  --bg1: #151515;
+  --bg2: #222222;
+  --bg3: #393939;
+  --wt1: #ffffff;
+  --wt2: #e9e9e9;
+  --mc: #e8b923;
+  --sc: #4A90E2;
+  --sc2: #24262b;
+  --sun: #e8b923;
+}
+
+body.light {
+  --bg1: #e8dfec;
+  --bg2: #fdf9ff;
+  --bg3: #f2f2fc;
+  --wt1: #302e4d;
+  --wt2: #504e70;
+  --mc: #ffffff;
+  --sc: #4A90E2;
+  --sc2: #ffffff;
+  --sun: #000000;
+}
+
+.switch-container {
+  padding: 10px;
+}
+
+label {
+  display: flex;
+  width: 85px;
+  height: 35px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  background: #b7b6b6;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+label i {
+  font-size: 18px;
+}
+
+label .fa-sun {
+  color: gold;
+  transition: 0.3s;
+}
+
+label .fa-moon {
+  color: #fff;
+  transition: 0.8s;
+}
+
+label .ball {
+  display: none;
+}
+
+input:checked+label .fa-sun {
+  transform: translateX(-53px);
+}
+
+input:checked+label .fa-moon {
+  transform: translateX(53px);
+}
+
+label .fa-sun {
+  opacity: 1;
+}
+
+input:checked+label .fa-sun {
+  opacity: 0;
+}
+
+label .fa-moon {
+  opacity: 0;
+}
+
+input:checked+label .fa-moon {
+  opacity: 1;
+}
+
+label .ball {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  left: 5px;
+  background: var(--wt2);
+  border-radius: 50%;
+  transition: 0.8s;
+}
+
+input:checked+label .ball {
+  transform: translateX(50px);
+}
+
+label .fa-moon {
+  transform: translateX(43px);
+}
+
+input:checked+label .fa-moon {
+  transform: transl 
+  ateX(0);
+}
+
+label {
+  transition: 0.3s;
+}
+
+input:checked+label {
+  background: var(--bg1);
+}
+
+input:checked+label .ball {
+  background: var(--wt1);
+}
+
+.switch-container input {
+  display: none;
+}
+
+input:checked+label .fa-sun {
+  transform: translateX(-53px) rotate(160deg);
+}
+
+label .fa-moon {
+  transform: translateX(53px) rotate(250deg);
+}
+
+input:checked+label .fa-moon {
+  transform: translateX(0), rotate(0);
+}
